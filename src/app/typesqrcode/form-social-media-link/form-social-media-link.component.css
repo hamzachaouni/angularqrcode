@@ -1,0 +1,110 @@
+/* start bar */
+.bar .bg-light {
+    background-color: #324ef9 !important;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link {
+    color: white;
+    margin-right: 42px;
+    font-size: 13px;
+    line-height: 40px;
+    
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link-bordere .span
+{
+    background-color: #030652;
+    border-radius: 2px;
+    padding: 0px 4px;
+}
+/* end bar */
+
+/* start url */
+.url {
+    padding: 40px 0 70px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #585858;
+}
+.url  h2 {
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+.url  .name-type {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    padding-bottom: 14px;
+}
+.url .text-right .form-group .form-control::placeholder {
+    color: #989b9e;
+    font-size: 13px;
+}
+.url .text-right .form-group {
+    position: relative;
+}
+.url .text-right .form-group .delete {
+    position: absolute;
+    right: -28px;
+    bottom: 13px;
+    cursor: pointer;
+}
+.url .icone-delete .fas,
+.url .icone-delete .fab {
+    font-size: 25px;
+    cursor: pointer;
+}
+.url .text-right .form-group .form-control {
+    padding: 9px;
+    border-radius: 2px;
+}
+.url .text-right .btn {
+    background-color: #324ef9;
+    border-radius: 0px;
+    width: 50%;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    margin: 30px auto 0;
+}
+.url .text-right label {
+    margin-top: 9px;
+}
+.url .btn-left {
+    background: none;
+    color: #989b9e;
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    width: 265%;
+}
+.url .btn-left a {
+    text-decoration: none;
+    color: #989b9e;
+}
+.url .img {
+    padding-top: 50px;
+}
+@media (max-width: 422px) {
+    .url .text-right .btn {
+        width: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1202px) {
+    .url .text-right .btn {
+        width: 77%;
+    }
+}
+@media (max-width: 346px) {
+    .url h2 {
+        font-size: 16px;
+    }
+    .url .name-type {
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+    .url .text-right .form-group .delete {
+        right: -7px;
+        bottom: 32px;
+    }
+}
+/* end url */

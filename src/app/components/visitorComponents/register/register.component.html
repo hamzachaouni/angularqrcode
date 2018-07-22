@@ -1,0 +1,80 @@
+<!-- start register -->
+<div class="register">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-md-7-form-text-register text-center">
+        <div class="form-text-register">
+          <h4>Scanova is the easiest way to create QR Codes</h4>
+          <img src="{{ register }}" alt="" width="100%" height="327px">
+          <div class="text-form">Engage customers better with print media using Scanova’s <br>Custom QR Codes — trusted by over 30,000 marketers<br> worldwide</div>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-5-form-register">
+        <div class="form-register">
+          <h2>register</h2>
+          <hr>
+              <form  #registerForm=ngForm (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                      <label for="firstname">First Name</label>
+                      <input required minLength="8" [(ngModel)]="form.name"  name="name" class="form-control" id="firstname" placeholder="Enter First Name">                
+                      <!--<div *ngIf="!firstname.valid && firstname.touched">
+                        <div class="required" *ngIf="firstname.errors.required">warah khalitiha khawia</div>
+                        <div class="minlength" *ngIf="firstname.errors.minlength">waktab ktar mn 8 caracters</div>
+                      </div>-->
+                      <div class="alert alert-primary" [hidden]="!error.name">
+                          {{ error.mane }}
+                        </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input required minLength="8" [(ngModel)]="form.email"  name="email"  class="form-control" id="exampleInputEmail1" placeholder="Enter email">                
+                    <!--<div *ngIf="!emailadress.valid && emailadress.touched">
+                      <div class="required" *ngIf="emailadress.errors.required">warah khalitiha khawia</div>
+                      <div class="minlength" *ngIf="emailadress.errors.minlength">waktab ktar mn 8 caracters</div>
+                    </div>-->
+                    <div class="alert alert-primary" [hidden]="!error.email">
+                        {{ error.email }}
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password (between 8-20 characters)</label>
+                    <input required minLength="20" maxLength="15" [(ngModel)]="form.password"  name="password"  type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <!--<div *ngIf="!password.valid && password.touched">
+                        <div class="required" *ngIf="password.errors.required">warah khalitiha khawia</div>
+                        <div class="minlength" *ngIf="password.errors.minlength">waktab ktar mn 8 caracters</div>
+                        <div class="minlength" *ngIf="password.errors.maxlength">matfotch 20 caracters</div>
+                    </div>-->
+                    <div class="alert alert-primary" [hidden]="!error.password">
+                        {{ error.password }}
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="exampleInputPassword2">Password Confirmation</label>
+                      <input required minLength="20" maxLength="15" [(ngModel)]="form.passwordconfirmation"  name="passwordconfirmation"  type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                      <!--<div *ngIf="!password.valid && password.touched">
+                          <div class="required" *ngIf="password.errors.required">warah khalitiha khawia</div>
+                          <div class="minlength" *ngIf="password.errors.minlength">waktab ktar mn 8 caracters</div>
+                          <div class="minlength" *ngIf="password.errors.maxlength">matfotch 20 caracters</div>
+                      </div>-->
+                      <div class="alert alert-primary" [hidden]="!error.passwordconfirmation">
+                          {{ error.passwordconfirmation }}
+                        </div>
+                    </div>
+                 
+                  <button type="submit" class="send-register btn btn-primary btn-block" [disabled]="!registerForm.valid">REGISTER</button> 
+                  <div class="sign-in">Already a user? <span><a routerLink="/login">Login</a></span> </div>
+              </form>
+
+             
+
+              <hr>
+              <button (click)="onRegisterGoogle()" type="submit" class="send-register-google btn btn-primary btn-block">REGISTER WITH GOOGLE <i class="fab fa-google"></i> </button>
+              <button (click)="onRegisterFacebook()" type="submit" class="send-register-facebook btn btn-primary btn-block">REGISTER WITH FACEBOOK <i class="fab fa-facebook"></i> </button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- end register -->
+  

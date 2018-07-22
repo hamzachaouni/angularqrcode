@@ -1,0 +1,77 @@
+<!--{{ posts.inputs.label }}-->
+<!--<div *ngFor="let xx of posts">hh</div>-->
+
+<!-- start bar -->
+<div class="bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link nav-link-bordere"href="#">
+                    <div [class.span]="bar_active == 'whyqrcodes'" (click)="bar_active = 'whyqrcodes'">CHOOSE QR CODE CATEGORY</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-bordere  nav-link-center" href="#">
+                    <div [class.span]="bar_active == 'features'" (click)="bar_active = 'features'">ENTRER CONTENT</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-bordere" href="#">
+                    <div [class.span]="bar_active == 'support'" (click)="bar_active = 'support'">DESING-DOWLOAD</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </nav>
+    </div>
+    <!-- end bar -->
+<!-- start create qrcode -->
+<div class="create-qrcode">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-2 left">
+                <div class="button-back">
+                    <a href="" class="btn btn-primary"> <i class="fas fa-chevron-left"></i> Back to qrcode</a>
+                </div>
+            </div>
+            <div class="col-md-6 center">
+                <div class="inputs">
+                    <div class="row justify-content-end">
+                        <div class="col-md-8 text-center">
+                            <div class="title">Simple VCard QR Code</div>
+                            <div class="short-description">Add Contact Information</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 text-right">Work Phone</div>
+                        <div class="col-md-8 text-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Entrer Url Web">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                        <div class="col-md-8 text-center">
+                                <div class="button-create">
+                                        <a class="btn btn-primary">Create Qr Code</a>
+                                </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="col-md-4 right">hh</div>
+        </div>
+    </div>
+</div>
+<!-- end create qrcode -->
+<app-footer></app-footer>
+
+

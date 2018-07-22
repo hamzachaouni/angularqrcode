@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+/* start bar */
+.bar .bg-light {
+    background-color: #324ef9 !important;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link {
+    color: white;
+    margin-right: 42px;
+    font-size: 13px;
+    line-height: 40px;
+    
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link-right {
+    color: black;
+    text-shadow: 0px 1px;
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link-bordere .span
+{
+    background-color: #030652;
+    border-radius: 2px;
+    padding: 0px 4px;
+}
+/* end bar */
+/* start dowload */
+.dowload {
+    padding: 30px 0;
+    color: #585858;  
+}
+.dowload .button-edit .btn {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .1px;
+    color: #585858;
+    text-align: center;
+    text-transform: uppercase;
+    background: 0 0;
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.dowload .title-dowload {
+    font-family: 'Ubuntu', sans-serif;
+}
+.dowload .title-dowload h2 { 
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: .3px;
+    text-align: center;
+    color: #585858;
+}
+.dowload .dowdes {
+    padding: 35px 0;
+}
+.dowload .dowdes .text-dowdes {
+    font-family: Montserrat;
+    font-size: 20px!important;
+    font-weight: 300!important;
+    letter-spacing: .1px;
+    text-align: center;
+    color: #585858;
+}
+.dowload .dowdes .btn-dowdes {
+    padding: 10px 0;
+}
+.dowload .dowdes .btn-dowdes .btn {
+    font-family: Montserrat;
+    font-size: 16px;
+    letter-spacing: .1px;
+    text-align: center;
+    color: #c0392b;
+    height: 42px;
+    border-radius: 2px;
+    border: solid 1px #c0392b;
+    padding-top: 10px;
+    background: none;
+}
+@media (max-width: 988px) {
+    .dowload .dowdes .btn-dowdes .btn {
+        margin-top: 5px;
+    }
+}
+@media (max-width: 479px) {
+    .dowload .title-dowload h2 {
+        font-size: 26px;
+    }
+}
+/* end dowload */
+/* start no-login */
+.no-login {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    padding: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: Montserrat;
+    width: 80%;
+    height: auto;
+    z-index: 999;
+}
+.no-login .no-login-border {
+    position: relative;
+}
+.no-login .no-login-border .close {
+    position: absolute;
+    top: -27px;
+    right: 0;
+}
+.no-login .text-top {
+    padding: 20px 0;
+}
+.no-login .text-top h1 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: .3px;
+    text-align: center;
+    color: #585858;
+    padding-bottom: 14px;
+}
+
+.no-login .text-top h5 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: .1px;
+    text-align: center;
+    color: #585858;
+    padding-top: 10px;
+}
+.no-login .text-top p {
+    color: #585f61;
+    padding-top: 10px;
+}
+.no-login .text-top .btn-choix {
+    padding-top: 10px;
+}
+.no-login .text-top .btn-choix .btn {
+    background: none;
+    color: black;
+    border-radius: 0;
+    border: 1px solid black;
+    padding: 3px 7px;
+    font-size: 12px;
+}
+.no-login .login {
+    padding: 30px 0;
+    background: #f7f7f7;
+}
+.no-login .login .btn-google {
+    background: white;
+    color: #c0392b;
+    border-radius: 0;
+    border: 1px solid #c0392b;
+    padding: 6px 38px;
+}
+.no-login .login .btn-email {
+    background: #c0392b;
+    color: white;
+    border-radius: 0;
+    border: 1px solid #c0392b;
+    padding: 6px 48px;
+    margin-top: 10px;
+}
+.no-login .login .para-login {
+    font-size: 10px;
+    padding-top: 5px;
+}
+.no-login .login .para-login a {
+    text-decoration: none;
+}
+@media (max-width: 451px) {
+    .no-login .login .btn-google {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .no-login .login .btn-email {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+@media (max-width: 634px) {
+    .no-login .text-top h1 {
+        font-size: 16px;
+    }
+    .no-login .text-top h5 {
+        font-size: 11px;
+    }
+}
+/* end no-login */
+
+/* start login */
+.login {  
+    
+    font-family: 'Montserrat', sans-serif;
+    color: #989797;
+}
+.login .form-login .form-group .form-control
+{
+    border-radius: 2px;
+}
+.login .form-login .form-group ::placeholder { 
+    color: #dadada;
+ }
+.login .form-login .required,
+.login .form-login minlength {
+    font-size: 11px;
+    margin: 4px 7px;
+    letter-spacing: 2px;
+}
+.login .form-login .form-group .form-control.ng-touched.ng-invalid {
+    border: 1px solid red;
+    border-radius: 0px;
+}
+.login .form-login {
+
+    padding: 23px 48px;
+}
+.login .col-md-5-form-login {
+    padding-right: 0;
+    padding-left: 0;
+}
+.login .col-md-7-form-text-login {
+    padding-right: 0;
+    padding-left: 0;
+}
+.login .col-md-7-form-text-login .form-text-login h4 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #808080;
+}
+.login .col-md-7-form-text-login .form-text-login h6 {
+    font-family: Montserrat;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #808080;
+}
+.login .col-md-7-form-text-login .form-text-login .text-form {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #808080;
+    margin-top: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.login .form-login .send-login {
+    border-radius: 0px;
+    background: #324ef9;
+    border: none;
+    margin-top: 15px;
+    padding: 12px;
+}
+.login .form-login .sign-in {
+    font-size: 10px;
+    margin: 5px 4px;
+}
+.login .form-login .send-login-google {
+    background: none;
+    border: 1px solid #db4437;
+    border-radius: 0;
+    padding: 12px;
+    color: #db4437;
+    margin-bottom: 26px;
+    margin-top: 30px;
+}
+
+.login .form-login .send-login-facebook {
+    background: none;
+    border: 1px solid #4267b2;
+    border-radius: 0;
+    padding: 12px;
+    color: #4267b2;
+}
+.login .form-text-login {
+    padding: 23px 48px;
+    color: #a09898;
+}
+.login .col-md-7-form-text-login .form-text-login h4 {
+    padding: 0 0 35px 0;
+}
+.login .col-md-7-form-text-login .form-text-login img {
+    padding-bottom: 20px;
+}
+.login .col-md-7-form-text-login .form-text-login .text-form {
+    padding-bottom: 35px;
+}
+.login .col-md-7-form-text-login .form-text-login a {
+    text-decoration: none;
+    color: #324ef9;
+    font-size: 13px;
+}
+@media (max-width: 352px) {
+    .login .send-login-facebook {
+        width: 117%;
+        font-size: 11px;
+    }
+    .login .send-login-google {
+        width: 117%;
+        font-size: 11px;
+    }
+}
+@media (max-width: 406px) {
+    .login .form-login label {
+        font-size: 11px;
+    }
+}
+@media (max-width: 543px) {
+    .login .form-login {
+        box-shadow: none;
+    }
+}
+@media (max-width: 458px) {
+    .login .col-md-7-form-text-login .form-text-login .text-form {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+@media (min-width: 768px) and (max-width: 989px) {
+    .login .send-login-facebook {
+        font-size: 13px;
+    }
+    .login .send-login-google {
+        font-size: 14px;
+    }
+    .login .form-login label {
+        font-size: 11px;
+    }
+}
+@media (max-width: 421px) {
+    .login .form-login {
+        padding: 7px;
+    }
+    .login .send-login-facebook,
+    .login .send-login-google {
+        width: 103%;
+    }
+     
+}
+/* end login */
+
+/* start nologin */
+.nologin {
+    font-family: 'Montserrat', sans-serif;
+}
+.nologin .modal-header {
+    background: #f0f2f9;
+}
+.nologin .text-nologin {
+    padding: 20px 0;
+}
+.nologin .text-nologin .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #dcd7d7;
+    padding: 1px;
+}
+.nologin .text-nologin .btn {
+    border-radius: 0;
+    padding: 2px 17px;
+    background: none;
+    border-color: #ccc;
+    position: relative;
+    color: #333;
+}
+
+.nologin .text-nologin .form-group label {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #ababab;
+}
+.nologin .text-nologin .form-group .top-text {
+    margin: 15px 0;
+}
+.nologin .text-nologin .form-group .bottom-text {
+    color: #ababab;
+    margin: 15px 0;
+}
+.nologin .modal-title {
+    color: black;
+    font-weight: bold;
+}
+.nologin .modal-dialog .modal-footer .btnclose {
+    border-radius: 0;
+    background: none;
+    color: #333;
+    border-color: #ccc;
+    padding: 1px 7px;
+}
+.nologin .modal-dialog .modal-footer .btnsave {
+    color: #fff;
+    background-color: #324ef9;
+    border-color: #324ef9;
+    border-radius: 2px;
+    padding: 1px 10px;
+}
+@media (min-width: 576px) {
+.modal-dialoge {
+    max-width: 871px;
+    margin: 1.75rem auto;
+}}
+.nologin .modal-content {
+    border-radius: 0;
+}
+/* end nologin */

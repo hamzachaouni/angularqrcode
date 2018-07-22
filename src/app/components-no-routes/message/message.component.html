@@ -1,0 +1,29 @@
+<!-- start message -->
+<div class="message" *ngIf="form_message == true">
+  <div class="form">
+    <div class="close" (click)="form_message = false">
+        <i class="fas fa-angle-down"></i>
+    </div>
+    <form>
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Subject">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control message-input" id="exampleInputEmail1" placeholder="Message">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Leave a message</button>
+    </form>
+  </div>
+</div>
+<!-- end message -->
+<!-- start bar-message -->
+<div class="bar-message" *ngIf="form_message == false" (click)="form_message = true">
+  <div class="bar-message-title">Leave a message <i class="fas fa-envelope"></i> </div>
+</div>
+<!-- end bar-message -->

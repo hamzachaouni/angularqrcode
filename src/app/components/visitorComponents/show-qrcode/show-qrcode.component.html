@@ -1,0 +1,243 @@
+
+<!-- start bar -->
+<div class="bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-bordere nav-link-left"href="#">
+                <div [class.span]="bar_active == 'whyqrcodes'" (click)="bar_active = 'whyqrcodes'">CHOOSE QR CODE CATEGORY</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-bordere" href="#">
+                <div [class.span]="bar_active == 'features'" (click)="bar_active = 'features'">ENTRER CONTENT</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-bordere" href="#">
+                <div [class.span]="bar_active == 'support'" (click)="bar_active = 'support'">DESING-DOWLOAD</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</div>
+<!-- end bar -->
+  
+  <!-- start srcode-text -->
+  <div class="srcode-text">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h1>QR Code Generator</h1>
+          <p>Create custom designed QR Codes with Scanova's QR Code Generator to attract more scans</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end srcode-text -->
+  
+  <!-- start bar-choix-srcodes -->
+  <div class="bar-choix-srcodes">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/qrcodegenerator/recomended">RECOMMENDED</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/qrcodegenerator">ALL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/qrcodegenerator/promotion">PROMOTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/qrcodegenerator/social">SOCIAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/qrcodegenerator/product">PRODUCT/SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/qrcodegenerator/business">BUSINESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/qrcodegenerator/personal">PERSONAL</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- end bar-choix-srcodes -->
+
+<!-- start choix-qrcode-recommended -->
+<section class="container">
+    <div class="row active-with-click choix-qrcode-recommended">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" *ngFor="let sqrcode of sqrcodes">
+            <div class="box">
+                <div class="imgbox">
+                    <a><img src="" class="img-responsive" width="100%" height="450px"></a>
+                </div>
+                <div class="content">
+                    <h3>{{ sqrcode.title }}</h3>
+                    
+                    <a class="btn btn-primary">Go Greate</a>
+                </div>
+                <div class="content-title">
+                    <h3></h3>
+                </div>
+            </div>           
+        </div>    
+    </div>
+</section> 
+<!-- end choix-qrcode-recommended -->
+<!-- start do-more -->
+<div class="do-more">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <div class="text-do-more-top">
+          <h2>Run end-to-end QR Code campaigns</h2>
+          <div class="para-top-do-more">Create, design, manage, and track QR Codes and landing pages in minutes</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ users }}">
+              <div class="card-body-text">
+                <h5 class="card-title">Lead Generation</h5>
+                <p class="card-text">Capture high-potential Customer leads</p>
+              </div>                   
+            </div>
+          </div></a>
+      </div>
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+                <img alt="hh" src="{{ chita }}">
+                <div class="card-body-text">
+                    
+                  <h5 class="card-title">Custom QR Code Design</h5>
+                  <p class="card-text">Create visually-appealing QR Codes to attract more scans</p>
+                </div>
+            </div>
+          </div></a>
+      </div>
+
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ icone_23 }}">
+              <div class="card-body-text">
+                <h5 class="card-title">23 Content Categories</h5>
+                <p class="card-text">Based on content, create upto 23 types of QR Codes</p>
+              </div>
+            </div>
+          </div></a>
+      </div>
+        
+    </div>
+
+    <div class="row justify-content-center">
+
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ sahm }}">
+              <div class="card-body-text">
+                <h5 class="card-title">Analytics</h5>
+                <p class="card-text">View number of scans by date, geography and device</p>
+              </div>
+            </div>
+          </div></a>
+      </div>
+            
+            
+
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ dynamic }}">
+              <div class="card-body-text">
+                <h5 class="card-title">Dynamic QR Codes</h5>
+                <p class="card-text">Edit QR Code content anytime</p>
+              </div>
+            </div>
+          </div></a>
+      </div>
+
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ tele }}">
+                <div class="card-body-text">
+                  <h5 class="card-title">Landing Pages</h5>
+                  <p class="card-text">Use readymade landing pages for campaigns</p>
+                </div>
+            </div>
+          </div></a>
+      </div>
+    </div>
+
+    <div class="button text-center">
+      <a class="btn btn-primary" href="#" role="button">SEE ALL FEATURES</a>
+    </div>
+  </div>
+</div>
+<!-- end do-more -->
+<!-- start faqs -->
+<div class="faqs">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+              <h2>FAQs Helpdesk</h2>
+              <div class="text-faqs-top">Get answers to your queries with our exhaustive FAQs helpdesk</div>
+          </div>
+          <div class="col-md-5 col-sm-12 text-faqs">
+              <h6>What will happen to my QR Codes after the 14-day free trial?</h6>
+              <div class="text-faqs-bottom">After the 14-day free trial ends, your Static QR Codes will continue to work but Dynamic QR Codes will expire. You will need to start a subscription to activate your account and Dynamic QR Codes.</div>
+              <div class="link-faqs-bottom"><a href="#">SEE FULL ANSWER</a></div>
+          </div>
+          <div class="col-md-5 col-sm-12 text-faqs">
+                  <h6>What is the difference between Dynamic and Static QR Codes?</h6>
+                  <div class="text-faqs-bottom">Dynamic QR Codes are advanced QR Codes with capabilities such as content editing and scan tracking. Static QR Codes are basic QR Codes, which are permanent but non-trackable and non-editable.</div>
+                  <div class="link-faqs-bottom"><a href="#">SEE FULL ANSWER</a></div>
+          </div>
+    
+          <div class="col-md-5 col-sm-12 text-faqs">
+                  <h6>My QR Code is not working anymore. What happened?</h6>
+                  <div class="text-faqs-bottom">In most cases, the QR Code stops working if your subscription has expired, your dynamic QR Code is in standby mode, or if the QR Code has become unscannable due to wear and tear.</div>
+                  <div class="link-faqs-bottom"><a href="#">SEE FULL ANSWER</a></div>
+          </div>
+    
+          <div class="col-md-5 col-sm-12 text-faqs">
+                  <h6>What should be the minimum size of QR Code on print?</h6>
+                  <div class="text-faqs-bottom">For most cases, the minimum size of a QR Code should at least be 1.2 inch or 3 cm or 115 pixels (in width and height). For the ideal size, see rule in full answer.</div>
+                  <div class="link-faqs-bottom"><a href="#">SEE FULL ANSWER</a></div>
+          </div>
+          <div class="col-md-12 button-faqs text-center">
+              <a class="btn btn-primary">SEE ALL FAQs</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <!-- end faqs -->
+  
+<app-footer></app-footer>

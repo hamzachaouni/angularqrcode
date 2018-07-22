@@ -1,0 +1,61 @@
+/* start message */
+.message {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    bottom: -26px;
+    right: 40px;
+    z-index: 999;
+    background: white;
+    padding: 40px;
+    border-radius: 4px;
+    width: 340px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    border-top: 1px solid black;
+}
+.message .form .form-group .form-control {
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+.message .form .form-group .form-control::placeholder {
+    font-size: 10px;
+}
+.message .form .form-group .message-input {
+    padding: 22px 10px;
+}
+.message .form .btn {
+    border-radius: 2px;
+    padding: 13px;
+    background: #324ef9;
+    border: none;
+}
+.message .form {
+    position: relative;
+}
+.message .form .close {
+    position: absolute;
+    top: -35px;
+    right: -23px;
+}
+/* end message */
+/* start bar-message */
+.bar-message {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    bottom: -5px;
+    right: 40px;
+    z-index: 999;
+    background: black;
+    padding: 5px 10px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    border-top: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+.bar-message .bar-message-title {
+    font-size: 13px;
+}
+.bar-message .bar-message-title .fas {
+    padding-left: 5px;
+}
+/* end bar-message */

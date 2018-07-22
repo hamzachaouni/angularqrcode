@@ -1,0 +1,245 @@
+/* start bar */
+.bar .bg-light {
+    background-color: #324ef9 !important;
+    padding: 0;
+    height: 42px;
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link {
+    color: white;
+    margin-right: 42px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 42px;
+    font-size: 13px;
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link-bordere .span
+{
+    background-color: #030652;
+    border-radius: 2px;
+    padding: 0px 4px;
+}
+/* end bar */
+/* start support */
+.support {
+    padding: 40px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.support h2 {
+    font-family: Montserrat;
+    color: #585858;
+}
+.support p {
+    font-family: Montserrat;
+    color: #585858;
+}
+.support .text-top {
+    padding: 10px 0;
+}
+@media (max-width: 314px) {
+    .support .text-top h2 {
+        font-size: 26px;
+    }
+    .support .text-top p {
+        font-size: 13px;
+    }
+}
+/* end support */
+/* start faqs */
+.faqs {
+    padding: 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fbfafa;
+}
+.faqs h2 {
+    color: #585858;
+}
+.faqs .text-faqs-top {
+    color: #585858;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.faqs .text-faqs {
+    color: #585858;
+    padding: 13px 0;
+    padding-right: 4%;
+}
+.faqs .text-faqs h6 {
+    padding: 22px 0;
+    font-size: 14px;
+}
+.faqs .text-faqs .text-faqs-bottom {
+    color: #585858;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    font-weight: 300;
+    letter-spacing: .1px;
+    text-align: justify;
+}
+.faqs .text-faqs .link-faqs-bottom {
+    color: #324ef9;
+    padding-top: 20px;
+}
+.faqs .text-faqs .link-faqs-bottom a {
+    text-decoration: none;
+}
+.faqs .button-faqs {
+    padding: 46px 0;
+}
+.faqs .button-faqs .btn {
+    width: 35%;
+    background: none;
+    border-radius: 0;
+    color: #324ef9;
+    border: 1px solid #324ef9;
+    padding: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .5);
+}
+@media (max-width: 567px) {
+    .faqs .text-faqs {
+        padding: 13px 21px;
+    }
+}
+@media (max-width: 394px) {
+    .faqs .button-faqs .btn {
+        width: 68%;
+    }
+}
+@media (max-width: 297px) {
+    .faqs h2 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 765px) {
+    .faqs .text-faqs {
+        text-align: center;
+    }
+}
+/* end faqs */
+/* start about-qr */
+.about-qr {
+    padding: 70px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #585858;
+}
+.about-qr .card {
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    border: solid 1px #979797!important;
+}
+.about-qr .text-about-top {
+    padding-bottom: 60px;
+}
+.about-qr .text-about-top h2 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: .2px;
+    text-align: center;
+    color: #585858;
+}
+.about-qr .text-about-top .text-about {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .1px;
+    text-align: center;
+    color: #585858;
+}
+.about-qr .card .card-body {
+    background-color: #fbf7f7;
+}
+/* media */
+@media (max-width: 463px) {
+    .about-qr .text-about-top h2 {
+        font-size: 14px;
+    }
+    .about-qr .text-about-top .text-about {
+        font-size: 10px;
+    }
+}
+@media (max-width: 764px) {
+    .about-qr .card {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 732px) {
+    .about-qr {
+        padding: 0;
+    }
+}
+/* media */
+/* and about-qr */
+
+
+/* start email */
+.email {
+    padding: 60px 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+}
+.email .text-top {
+    padding-bottom: 20px;
+}
+.email .text-top h2 {
+    font-family: Montserrat;
+    color: #585858;;
+}
+.email .text-top p {
+    font-family: Montserrat;
+    color: #585858;
+}
+.email .form-left {
+    font-family: Montserrat;
+    color: #585858;
+    margin-bottom: 10px;
+}
+.email .form-left .form-group .form-control::placeholder {
+    color: #dfdfdf;
+}
+.email .form-left .form-group .form-control {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+}
+.email .form-left .form-group .textarea {
+    padding: 13px 15px 55px;
+}
+.email .form-left .btn {
+    padding: 12px;
+    border-radius: 2px;
+    background-color: #324ef9;
+}
+
+/* end email */
+
+/* start call-us */
+.call-us {
+    padding: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.call-us h2 {
+    font-family: Montserrat;
+    color: #585858;
+}
+.call-us p {
+    font-family: Montserrat;
+    color: #585858;
+}
+.call-us .button-call-us {
+    padding: 46px 0;
+}
+.call-us .button-call-us .btn {
+    width: 72%;
+    background: none;
+    border-radius: 0;
+    color: #324ef9;
+    border: 1px solid #324ef9;
+    padding: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .5);
+}
+@media (max-width: 394px) {
+    .call-us .button-call-us .btn {
+        width: 68%;
+    }
+}
+/* end call-us */

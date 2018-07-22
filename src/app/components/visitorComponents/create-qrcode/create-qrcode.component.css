@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* start bar */
+.bar .bg-light {
+    background-color: #324ef9 !important;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link {
+    color: white;
+    margin-right: 42px;
+    font-size: 13px;
+    line-height: 40px;
+    
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link-center {
+    color: black;
+    text-shadow: 0px 1px;
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link-bordere .span
+{
+    background-color: #030652;
+    border-radius: 2px;
+    padding: 0px 4px;
+}
+/* end bar */
+/* start create qrcode */
+.create-qrcode {
+    padding: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.create-qrcode .left {}
+.create-qrcode .left .button-back .btn {
+    background: none;
+    border: 1px solid #ded7d7;
+    color: #7b7a7a;
+    border-radius: 0;
+}
+.create-qrcode .center .inputs {}
+.create-qrcode .center .inputs .form-group ::placeholder {
+    color: #d8d9dc;
+}
+.create-qrcode .center .inputs .form-group .form-control {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 11px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+}
+.create-qrcode .center .inputs .title {
+    font-size: 30px;
+    color: #949292;
+}
+.create-qrcode .center .inputs .short-description {
+    font-size: 19px;
+    margin-bottom: 19px;
+    margin-top: 45px;
+    color: #cecbcb;
+}
+.create-qrcode .center .button-create .btn {
+    background: #324ef9;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.create-qrcode .right {}
+/* end create qrcode */

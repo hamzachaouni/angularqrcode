@@ -1,0 +1,27 @@
+/* start navbar*/
+/*@import url('https://fonts.googleapis.com/css?family=Ubuntu');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.navbar-top .bg-light {
+    background-color: #ffffff !important;
+    padding: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.navbar-top .navbar-light .navbar-nav .nav-link {
+    color: #949292;
+    /*font-family: 'Ubuntu', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 10px;
+    font-size: 13px;
+}
+.navbar-top .navbar-light .navbar-nav .active .nav-link {
+    background-color: #f8f8f8;
+    color: #7889f1;
+}
+.navbar-top .navbar-expand-lg .ul-left {
+    margin-left: 100px;
+}
+.navbar-top .navbar-expand-lg .ul-left .nav-item,
+.navbar-top .navbar-expand-lg .ul-right .nav-item {
+    margin: 0 12px 0 0;
+}
+/* end navbar */

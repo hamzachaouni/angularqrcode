@@ -1,0 +1,152 @@
+/* start login */
+.login {  
+    padding: 35px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #989797;
+}
+.login .form-login .alert-danger {
+    border: 1px solid red;
+    background: #f70d0d;
+    padding: 4px 13px;
+    border-radius: 0;
+}
+.login .form-login .form-group .form-control
+{
+    border-radius: 2px;
+}
+.login .form-login .form-group ::placeholder { 
+    color: #dadada;
+ }
+.login .form-login .required,
+.login .form-login minlength {
+    font-size: 11px;
+    margin: 4px 7px;
+    letter-spacing: 2px;
+}
+.login .form-login .form-group .form-control.ng-touched.ng-invalid {
+    border: 1px solid red;
+    border-radius: 0px;
+}
+.login .form-login {
+
+    padding: 23px 48px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login .col-md-5-form-login {
+    padding-right: 0;
+    padding-left: 0;
+}
+.login .col-md-7-form-text-login {
+    padding-right: 0;
+    padding-left: 0;
+}
+.login .col-md-7-form-text-login .form-text-login h4 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #808080;
+}
+.login .col-md-7-form-text-login .form-text-login h6 {
+    font-family: Montserrat;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #808080;
+}
+.login .col-md-7-form-text-login .form-text-login .text-form {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #808080;
+    margin-top: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.login .form-login .send-login {
+    border-radius: 0px;
+    background: #324ef9;
+    border: none;
+    margin-top: 15px;
+    padding: 12px;
+}
+.login .form-login .sign-in {
+    font-size: 10px;
+    margin: 5px 4px;
+}
+.login .form-login .send-login-google {
+    background: none;
+    border: 1px solid #db4437;
+    border-radius: 0;
+    padding: 12px;
+    color: #db4437;
+    margin-bottom: 26px;
+    margin-top: 30px;
+}
+
+.login .form-login .send-login-facebook {
+    background: none;
+    border: 1px solid #4267b2;
+    border-radius: 0;
+    padding: 12px;
+    color: #4267b2;
+}
+.login .form-text-login {
+    padding: 23px 48px;
+    color: #a09898;
+}
+.login .col-md-7-form-text-login .form-text-login h4 {
+    padding: 0 0 35px 0;
+}
+.login .col-md-7-form-text-login .form-text-login img {
+    padding-bottom: 20px;
+}
+.login .col-md-7-form-text-login .form-text-login .text-form {
+    padding-bottom: 35px;
+}
+.login .col-md-7-form-text-login .form-text-login a {
+    text-decoration: none;
+    color: #324ef9;
+    font-size: 13px;
+}
+@media (max-width: 352px) {
+    .login .send-login-facebook {
+        width: 117%;
+        font-size: 11px;
+    }
+    .login .send-login-google {
+        width: 117%;
+        font-size: 11px;
+    }
+}
+@media (max-width: 406px) {
+    .login .form-login label {
+        font-size: 11px;
+    }
+}
+@media (max-width: 543px) {
+    .login .form-login {
+        box-shadow: none;
+    }
+}
+@media (max-width: 458px) {
+    .login .col-md-7-form-text-login .form-text-login .text-form {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+@media (min-width: 768px) and (max-width: 989px) {
+    .login .send-login-facebook {
+        font-size: 13px;
+    }
+    .login .send-login-google {
+        font-size: 14px;
+    }
+    .login .form-login label {
+        font-size: 11px;
+    }
+}
+/* end login */

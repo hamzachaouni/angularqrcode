@@ -1,0 +1,246 @@
+<!-- start bar -->
+<div class="bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-bordere" routerLink="/why-qr-codes">
+                <div [class.span]="bar_active == 'whyqrcodes'" (click)="bar_active = 'whyqrcodes'">WHY QR CODES</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-bordere" href="#">
+                <div [class.span]="bar_active == 'features'" (click)="bar_active = 'features'">FEATURES</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-bordere" routerLink="/support">
+                <div [class.span]="bar_active == 'support'" (click)="bar_active = 'support'">SUPPORT</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</div>
+<!-- end bar -->
+    
+<!-- start sreate-qr-codes -->
+  <div class="create-qr-codes">    
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-6 col-sm-12 contenu-left">
+            <img class="d-block w-100" src="{{ imagei }}" alt="" height="320px;">
+        </div>
+        <div class="col-md-6 col-sm-12 text-center contenu-right">
+          <div class="text text-center">
+            <h1>Say more with print media</h1>
+            <h5>Engage customers better with print media using <br> Scanova's Custom QR Codes - trusted by over <br> 20,000 marketers worldwide</h5>
+            <a class="btn btn-primary" routerLink="/qrcodegenerator">CREATE QR CODE NOW</a> 
+          </div>
+        </div>
+      </div>
+    </div>     
+  </div>
+<!-- end sreate-qr-codes -->
+<!-- start traffic -->
+<div class="traffic">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center  text-top">
+            <h2>Get instant online traffic from print media</h2>
+            <div class="text-traffic-top">Use Scanova's Custom QR Codes to make print media actionable and trackable
+              </div>
+      </div>
+      <div class="col-md-6 col-sm-12 text-center text-bottom">
+        <h3>The old way</h3>
+        <div class="text-bottom-traffic">Traditional print media is non-actionable and marketers cannot guage engagement level</div>
+        <img src="{{ watchvide }}" alt="hh" width="100%" height="330px">
+      </div>
+      <div class="col-md-6 col-sm-12 text-center text-bottom text-bottom-border-left">
+        <h3>The new way</h3>
+        <div class="text-bottom-traffic">Adding a QR Code to print media makes it actionable and marketers can track activity</div>
+        <img src="{{ watchvidee }}" alt="hh" width="100%" height="330px">
+      </div>
+    </div>
+    <div class="button-traffic text-center">
+      <a routerLink="/#" class="btn btn-primary">SEE USE CASES OF QR CODES</a>
+    </div>
+  </div>
+</div>
+<!-- end traffic -->
+
+<!-- start do-more -->
+<div class="do-more">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <div class="text-do-more-top">
+          <h2>Run end-to-end QR Code campaigns</h2>
+          <div class="para-top-do-more">Create, design, manage, and track QR Codes and landing pages in minutes</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ users }}">
+              <div class="card-body-text">
+                <h5 class="card-title">Lead Generation</h5>
+                <p class="card-text">Capture high-potential Customer leads</p>
+              </div>                   
+            </div>
+          </div></a>
+      </div>
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+                <img alt="hh" src="{{ chita }}">
+                <div class="card-body-text">
+                    
+                  <h5 class="card-title">Custom QR Code Design</h5>
+                  <p class="card-text">Create visually-appealing QR Codes to attract more scans</p>
+                </div>
+            </div>
+          </div></a>
+      </div>
+
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ icone_23 }}">
+              <div class="card-body-text">
+                <h5 class="card-title">23 Content Categories</h5>
+                <p class="card-text">Based on content, create upto 23 types of QR Codes</p>
+              </div>
+            </div>
+          </div></a>
+      </div>
+        
+    </div>
+
+    <div class="row justify-content-center">
+
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ sahm }}">
+              <div class="card-body-text">
+                <h5 class="card-title">Analytics</h5>
+                <p class="card-text">View number of scans by date, geography and device</p>
+              </div>
+            </div>
+          </div></a>
+      </div>
+            
+            
+
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ dynamic }}">
+              <div class="card-body-text">
+                <h5 class="card-title">Dynamic QR Codes</h5>
+                <p class="card-text">Edit QR Code content anytime</p>
+              </div>
+            </div>
+          </div></a>
+      </div>
+
+      <div class="col-md-3 col-sm-12 text-center">
+        <a href="#">
+          <div class="card">
+            <div class="card-body">
+              <img alt="hh" src="{{ tele }}">
+                <div class="card-body-text">
+                  <h5 class="card-title">Landing Pages</h5>
+                  <p class="card-text">Use readymade landing pages for campaigns</p>
+                </div>
+            </div>
+          </div></a>
+      </div>
+    </div>
+
+    <div class="button text-center">
+      <a class="btn btn-primary" href="#" role="button">SEE ALL FEATURES</a>
+    </div>
+  </div>
+</div>
+<!-- end do-more -->
+
+<!-- start started -->
+<div class="started">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-5 col-sm-12 text-left">
+        <h2>Get started with Scanova</h2>
+        <div class="text-started-left">
+            Sign-up for a 14-day free trial. No credit<br>
+            card required. Cancel account anytime.
+        </div>
+        <div class="button-started">
+          <a routerLink="/register" class="btn btn-primary">TRY SCANOVA NOW</a>
+        </div>
+        
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <img src="{{ gostart }}" alt="" width="100%" height="253px">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end started -->
+
+<!-- start about-qr -->
+<div class="about-qr">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-sm-12 text-about-top text-center">
+        <h2>Know more about QR Codes</h2>
+        <div class="text-about">Our expert guides will help you create QR Code campaigns like a pro</div>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <div class="card">
+          <img class="card-img-top" src="{{ qrcodelogo }}" alt="Card image cap" width="100%" height="193px">
+          <div class="card-body">        
+            <p class="card-text">How to make QR Code like a pro</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-12">
+        <div class="card">
+          <img class="card-img-top" src="{{ comqrcode }}" alt="Card image cap" width="100%" height="193px">
+          <div class="card-body">        
+            <p class="card-text">How QR Codes are used: Epic Guide for Marketers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-12">
+        <div class="card">
+          <img class="card-img-top" src="{{ qrcodecolor }}" alt="Card image cap" width="100%" height="193px">
+          <div class="card-body">        
+            <p class="card-text">How to create a custom QR Code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end about-qr -->
+
+<app-footer></app-footer>
+
+
+
+

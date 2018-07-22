@@ -1,0 +1,41 @@
+/* start footer */
+.footer
+{
+    padding: 30px 0;
+    background-color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer .logo-info .info div {
+    font-size: 12px;
+}
+.footer .company {
+    font-size: 16px!important;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .1px!important;
+    color: #585858;
+}
+.footer .class-company div{
+    margin: 10px 0 0 0;
+}
+.footer .class-company a {
+    font-size: 14px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #585858;
+}
+.footer .logo-info .icone .fab,
+.footer .logo-info .icone .fas {
+    font-size: 25px;
+    color: #585858;
+    padding-bottom: 20px
+}
+@media (max-width: 766px) {
+    .footer .text {
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+/* end footer */

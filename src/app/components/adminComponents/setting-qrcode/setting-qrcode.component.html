@@ -1,0 +1,95 @@
+<app-admin-home></app-admin-home>
+<div class="setting-srcode">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngIf="!form">
+      <div class="button-new">
+        <button (click)="onForm()" class="btn btn-new">New <i class="fas fa-plus-square"></i> </button>
+      </div>
+    </div>
+    <div class="col-md-7" *ngIf="form">
+        <div class="form-create">
+            <div class="title-form">
+                Add New Type
+            </div>
+            <form>
+                <div class="form-group"> 
+                <input type="text" name="title" [(ngModel)]="sqrcode.title" class="form-control" placeholder="Enter Title">
+                </div>
+                <div class="form-group">
+                      <input type="text" name="description" [(ngModel)]="sqrcode.description" class="form-control" placeholder="Enter Description">
+                </div>
+                <div class="form-group">
+                    <input type="shorttitle" name="body" [(ngModel)]="sqrcode.shorttitle" class="form-control" placeholder="Enter Short Title">
+              </div>
+                <div class="form-group">
+                      <input type="text" name="shortdescription" [(ngModel)]="sqrcode.shortdescription" class="form-control" placeholder="Enter Short Description">
+                </div>
+                
+                <div class="form-group">
+                      <textarea type="text" name="text" [(ngModel)]="sqrcode.inputs" class="form-control" placeholder="Enter Inputs"></textarea>
+                </div>
+
+                <div class="upload-btn-wrapper">
+                    <button class="btn btn-file">Upload a file</button>
+                    <input [(ngModel)]="sqrcode.image" type="file" name="image" />
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let c of checkbox">
+                      <div class="form-group form-check">
+                    <input [(ngModel)]="sqrcode.recomended" id="{{ c.id }}" name="{{ c.name }}" value="recomended" type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="{{ c.id }}"><span></span>{{ c.label }}</label>
+                  </div>
+                  </div>
+                </div>
+              
+                <button class="btn btn-create" (click)="create()" *ngIf="status">Create</button>
+                <button class="btn btn-update" (click)="update()" *ngIf="!status">Update</button>
+                <button class="btn btn-cancel" (click)="onForm()">Cancel</button>
+              </form>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table">
+            <table class="table">
+                <thead class="thead">
+                  <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Short Title</th>
+                    <th scope="col">Short Description</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Inputs</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let post of sqrcodes">
+                    <td>{{ post.title }}</td>
+                    <td>{{ post.description }}</td>
+                    <td>{{ post.shorttitle }}</td>
+                    <td>{{ post.shortdescription }}</td>
+                    <td>{{ post.image }}</td>
+                    <td>{{ post.inputs }}</td>
+                    <td><button class="btn btn-edit" (click)="edit(post)">edit <i class="fas fa-edit"></i> </button></td>
+                    <td><button class="btn btn-delete" (click)="delete(post)">Delete <i class="fas fa-trash-alt"></i> </button></td>
+                  </tr>
+                  
+              
+                </tbody>
+              </table>
+              
+              
+
+
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+  

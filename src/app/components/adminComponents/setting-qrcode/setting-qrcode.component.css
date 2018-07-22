@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.setting-srcode {
+    padding: 50px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.setting-srcode .title-form {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+.setting-srcode .button-new {
+    padding-bottom: 20px;
+}
+.setting-srcode .button-new .btn-new {
+    background: #9ef175;
+    border-radius: 11px;
+    color: white;
+}
+.setting-srcode .form-create {
+    padding-bottom: 20px;
+}
+.setting-srcode .form-create .form-group {
+    border-radius: 12px;
+}
+.setting-srcode .form-create .btn-create {
+    background: #00BCD4;
+}
+.setting-srcode .form-create .btn-update {
+    background: #009688;
+}
+.setting-srcode .form-create .btn-cancel {
+    background: #ff0000;
+}
+.setting-srcode .form-create .form-check input[type="checkbox"] {
+    display:none;
+}
+
+.setting-srcode .form-create .form-check input[type="checkbox"] + label {
+    color:#000000;
+}
+
+.setting-srcode .form-create .form-check input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.setting-srcode .form-create .form-check input[type="checkbox"]:checked + label span {
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+}
+.setting-srcode .form-create .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+.setting-srcode .form-create .btn-file {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+.setting-srcode .form-create .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+/****************************/
+.setting-srcode .table {}
+.setting-srcode .table .thead {
+    background: #324ef9;
+    border: none;
+}
+.setting-srcode .table .thead tr th {
+    padding: 7px 11px;
+    border-bottom: none;
+    color: white;
+    font-size: 12px;
+}
+.setting-srcode .table tbody tr td {
+    padding: 7px 11px;
+    border-bottom: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+.setting-srcode .table tbody tr td .btn {
+    border-radius: 7px;
+    padding: 1px 13px;
+    background: #31b1f5;
+    color: white;
+    border: none;
+}
+.setting-srcode .table tbody tr td .btn-delete {
+    background: #ff3e01;
+    color: white;
+}
+.setting-srcode .table tbody .btn-edit {}
+.setting-srcode .table tbody .btn-delete {}

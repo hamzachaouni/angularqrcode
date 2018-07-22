@@ -1,0 +1,102 @@
+/* start bar */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+.bar .bg-light {
+    background-color: #324ef9 !important;
+    padding: 0;
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link {
+    color: white;
+    margin-right: 42px;
+}
+.bar .navbar-light .navbar-nav .nav-item .nav-link-bordere .span
+{
+    background-color: #030652;
+    border-radius: 2px;
+    padding: 0px 4px;
+}
+/* end bar */
+
+/* start pdf */
+.image {
+    padding: 40px 0 70px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.image .right-text h1 {
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+.image .right-text .name-type {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    color: rgb(88, 88, 88);
+    padding-bottom: 14px;
+}
+.image .right-text .form-group .form-control {
+    padding: 14px;
+    border-radius: 0;
+}
+.image .right-text .btn {
+    background-color: #324ef9;
+    border-radius: 0px;
+    width: 50%;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    margin: 30px auto 0;
+}
+.image .btn-left {
+    background: none;
+    color: #989b9e;
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    width: 50%;
+}
+.image .btn-left a {
+    text-decoration: none;
+    color: #989b9e;
+}
+.image .right-text .upload {
+    position: relative;
+}
+.image .right-text .upload .button-upload {
+    position: absolute;
+    top: 13%;
+    left: 37%;
+    background: none;
+    padding: 8px 22px;
+    border: 1px solid #324ef9;
+    color: #324ef9;
+    cursor: pointer;
+}
+.image .input-group {
+    width: 100%;
+    
+}
+.image .input-group .custom-file .custom-file-label {
+    border-radius: 0;
+    cursor: pointer;
+}
+.image .input-group .custom-file .custom-file-label::after {
+    content: "";
+    padding: 0;
+    border-left: none;
+}
+@media (max-width: 390px) {
+    .image .right-text .btn {
+        width: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width: 996px) {
+    .image .right-text .btn {
+        width: 70%;
+    }
+}
+@media (max-width: 346px) {
+    .image .right-text h1 {
+        font-size: 27px;
+    }
+    .image .right-text .name-type {
+        font-size: 16px;
+    }
+}
+/* end image */

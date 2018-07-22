@@ -1,0 +1,56 @@
+<!-- start navbar -->
+<flash-messages></flash-messages>
+<div class="navbar-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+  <a class="navbar-brand" routerLink="/home">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ul-left">
+      <li class="nav-item" [class.active]="navbar_top_active == 'home'" (click)="navbar_top_active = 'home'">
+        <a class="nav-link" routerLink="/home">HOME </a>
+      </li>
+      <li class="nav-item" [class.active]="navbar_top_active == 'qrcode'" (click)="navbar_top_active = 'qrcode'">
+        <a class="nav-link" routerLink="/qrcodegenerator">QR CODE GENERATOR</a>
+      </li>
+      <li class="nav-item" [class.active]="navbar_top_active == 'blog'" (click)="navbar_top_active = 'blog'">
+        <a class="nav-link" routerLink="/blog">BLOG</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto ul-right">
+        <li *ngIf="!loggedIn" class="nav-item" [class.active]="navbar_top_active == 'login'" (click)="navbar_top_active = 'login'">
+          <a class="nav-link" routerLink="/login">LOGIN</a>
+        </li>
+        <li *ngIf="!loggedIn" class="nav-item" [class.active]="navbar_top_active == 'register'" (click)="navbar_top_active = 'register'">
+          <a class="nav-link" routerLink="/register">REGISTER</a>
+        </li>
+        <li  class="nav-item" [class.active]="navbar_top_active == 'user'" (click)="navbar_top_active = 'user'">
+            <a class="nav-link">{{ userloggeIn }}</a>
+        </li>
+        <li *ngIf="loggedIn" class="nav-item" [class.active]="navbar_top_active == 'logout'" (click)="navbar_top_active = 'logout'">
+            <a class="nav-link" href="#" (click)="logout($event)">Logout</a>
+        </li>
+      </ul>
+  </div>
+</div>
+</nav>
+</div>
+<!-- end navbar -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
