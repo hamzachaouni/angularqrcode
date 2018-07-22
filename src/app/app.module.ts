@@ -14,29 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
-import { FormurlwebsiteComponent } from './typesqrcode/formurlwebsite/formurlwebsite.component';
-import { FormgooglemapsComponent } from './typesqrcode/formgooglemaps/formgooglemaps.component';
-import { FormpdfComponent } from './typesqrcode/formpdf/formpdf.component';
-import { FormImageComponent } from './typesqrcode/form-image/form-image.component';
-import { FormSocialMediaLinkComponent } from './typesqrcode/form-social-media-link/form-social-media-link.component';
-import { FormVcardProfileComponent } from './typesqrcode/form-vcard-profile/form-vcard-profile.component';
-import { FormFormattedTextComponent } from './typesqrcode/form-formatted-text/form-formatted-text.component';
-import { FormAppStoreLinkComponent } from './typesqrcode/form-app-store-link/form-app-store-link.component';
-import { FormAudioComponent } from './typesqrcode/form-audio/form-audio.component';
-import { FormFacebookComponent } from './typesqrcode/form-facebook/form-facebook.component';
-import { FormLinkedInComponent } from './typesqrcode/form-linked-in/form-linked-in.component';
-import { FormYoutubeComponent } from './typesqrcode/form-youtube/form-youtube.component';
-import { FormTwitterComponent } from './typesqrcode/form-twitter/form-twitter.component';
-import { FormCouponComponent } from './typesqrcode/form-coupon/form-coupon.component';
-import { FormSmsComponent } from './typesqrcode/form-sms/form-sms.component';
-import { FormPhoneNumberComponent } from './typesqrcode/form-phone-number/form-phone-number.component';
-import { FormEmailAdressComponent } from './typesqrcode/form-email-adress/form-email-adress.component';
-import { FormCalendarComponent } from './typesqrcode/form-calendar/form-calendar.component';
-import { FormSimpleVcardComponent } from './typesqrcode/form-simple-vcard/form-simple-vcard.component';
-import { FormWifiComponent } from './typesqrcode/form-wifi/form-wifi.component';
-import { FormSimpleTextComponent } from './typesqrcode/form-simple-text/form-simple-text.component';
-import { FormPaypalComponent } from './typesqrcode/form-paypal/form-paypal.component';
-import { FormBitcoinComponent } from './typesqrcode/form-bitcoin/form-bitcoin.component';
+
 import { environment } from '../environments/environment';
 import { JarwisService } from './services/jarwis.service';
 import { TokenService } from './services/token.service';
@@ -85,29 +63,6 @@ import { MessageComponent } from './components-no-routes/message/message.compone
     FeaturesComponent,
     SupportComponent,
     FooterComponent,
-    FormurlwebsiteComponent,
-    FormgooglemapsComponent,
-    FormpdfComponent,
-    FormImageComponent,
-    FormSocialMediaLinkComponent,
-    FormVcardProfileComponent,
-    FormFormattedTextComponent,
-    FormAppStoreLinkComponent,
-    FormAudioComponent,
-    FormFacebookComponent,
-    FormLinkedInComponent,
-    FormYoutubeComponent,
-    FormTwitterComponent,
-    FormCouponComponent,
-    FormSmsComponent,
-    FormPhoneNumberComponent,
-    FormEmailAdressComponent,
-    FormCalendarComponent,
-    FormSimpleVcardComponent,
-    FormWifiComponent,
-    FormSimpleTextComponent,
-    FormPaypalComponent,
-    FormBitcoinComponent,
     DowloadsComponent,
     NavbarComponent,
     MessageComponent,
